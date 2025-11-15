@@ -9,7 +9,9 @@ export default function RootLayout({
       <head>
         <title>My Next.js App</title>
       </head>
-      <body>{children}</body>
+      <body className="flex flex-col items-center justify-center h-screen gap-4">
+        {children}
+      </body>
     </html>
   );
 }

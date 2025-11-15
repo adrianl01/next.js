@@ -1,8 +1,11 @@
+import Form from "@/components/Form";
+
 function LogInPage() {
   return (
-    <h1 className="flex flex-col items-center justify-around h-screen">
-      LogInPage
-    </h1>
+    <>
+      <h1>Log In</h1>
+      <Form />
+    </>
   );
 }
 

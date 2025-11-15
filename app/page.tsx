@@ -1,13 +1,16 @@
 "use client";
-import MyButton from "components/Button";
+import { LogoutButton, MyButton } from "components/Button";
 import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import Logged from "@/components/Logged";
 
 export default function Page() {
   const router = useRouter();
   return (
     <>
-      <h1>Hello, World!</h1>;
-      <div className="flex flex-col items-center gap-4">
+      {<Logged />}
+      <h1>Hello, World!</h1>
+      <div className="flex flex-col gap-4">
         <MyButton
           children="Go to /admin Page (middleware Protected)"
           onClick={() => router.push("/admin")}
@@ -17,9 +20,16 @@ export default function Page() {
           onClick={() => router.push("/login")}
         />
         <MyButton
-          children="Go to Other Page With a Button Components"
+          children="Go to /other Page With a custom Button Component"
           onClick={() => router.push("/other")}
         />
+        <Button
+          variant="outline"
+          onClick={() => alert("Shadcn UI Button Clicked!")}
+        >
+          Shadcn UI Button
+        </Button>
+        <LogoutButton />
       </div>
     </>
   );
