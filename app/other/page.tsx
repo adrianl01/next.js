@@ -1,5 +1,5 @@
 "use client";
-import MyButton from "components/Button";
+import { MyButton } from "components/Button";
 import { useState } from "react";
 
 export default function OtherPage() {
