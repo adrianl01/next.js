@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
 
   // Image optimization config
   images: {
-    domains: ["images.unsplash.com", "assets.example.com"],
     remotePatterns: [
       {
         protocol: "https",

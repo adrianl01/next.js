@@ -1,12 +1,7 @@
-import Form from "@/components/Form";
+import LogIn from "@/components/login";
 
 function LogInPage() {
-  return (
-    <>
-      <h1>Log In</h1>
-      <Form />
-    </>
-  );
+  return <LogIn />;
 }
 
 export default LogInPage;
