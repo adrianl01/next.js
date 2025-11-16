@@ -15,6 +15,11 @@ Reference document: *Advance Training for Related Front-end APP.docx*
 - Tailwind CSS
 - ESLint + Prettier
 
+### Vercel Deployment
+
+Click [here](https://next-js-two-gamma-26.vercel.app/https://next-js-two-gamma-26.vercel.app/) to go to de vercel deployment
+
+
 ### ▶ How to Run the Project
 
 ```bash
